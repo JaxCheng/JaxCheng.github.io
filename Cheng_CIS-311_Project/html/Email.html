@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>register and contact us</title>
+    <link rel="shortcut icon" href="../images/download-1.jpg">
+    <style>
+    	html{
+			background-image: url(../images/wall.jpeg);
+			background-size：100%；
+			}
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		    box-shadow: 0px 5px 10px 5px black;
+			background-color:white;
+		    
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+			text-align: left;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#male, #female{
+			clear: both;
+			float: right;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+</head>
+
+<body>
+<h1>Please talk to us</h1>
+<form name="myform" action="survey.php" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" method="get" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" method="get" required><br>
+    
+    <h2>More about you</h2>
+    <label for="text">State</label>
+    <input type="text" name="State" id="State" placeholder="Two characters" maximun length="2" required pattern="[A-Za-Z]{2}" title="Must be AA"><br>
+    <label for="zipcode">Zip code</label>
+    <input type="text" name="zipcode" id="zipcode" placeholder="Five digits" maximun length="5" required pattern="\d{5}}" title="Must be 00000"><br>
+    <label for="gender">Gender</label>
+    <br><input type="radio" name="gender" id="male" value="male" checked> Male 
+    <br><input type="radio" name="gender" id="female" value="female"> Female
+    <br><label for="Age">Age</label>
+    <select name="age">
+    	<option value="18" selected="yes">18</option>
+    	<option value="19">19</option>
+    	<option value="20">20</option>
+    	<option value="21">21</option>
+    	<option value="22">22</option>
+    	<option value="23">23</option>
+    	<option value="24">24</option>
+    	<option value="25">25</option>
+    	<option value="26">26</option>
+    	<option value="27">27</option>
+    </select>
+    
+    <h2>Who do you want to have friendship/romantic relationship with? (select one)</h2>
+    <label for="Xilin Cheng">Xilin Cheng</label>
+    <input type="checkbox" name="method1" value="Xilin Cheng"><br> 
+    <label for="Griffin Murray">Griffin Murray</label>
+    <input type="checkbox" name="method2" value="Griffin Murray"><br>
+    <label for="Jack Neenan">Jack Neenan</label>
+    <input type="checkbox" name="method3" value="Jack Neenan"><br>
+    <label for="Will Neikirk">Will Neikirk</label>
+    <input type="checkbox" name="method4" value="Will Neikirk"><br>
+    <label for="Nicholas Wainwright">Nicholas Wainwright</label>
+    <input type="checkbox" name="method5" value="Nicholas Wainwright"><br>
+    
+    <br><h2>Thank you for choosing/not choosing Xilin Cheng</h2>
+    <textarea name="message" rows="10" cols="70">
+	Say something to any member.
+	</textarea>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>

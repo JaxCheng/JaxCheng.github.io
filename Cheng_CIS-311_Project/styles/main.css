@@ -1,0 +1,119 @@
+html{
+	background-image: url(../images/wall.jpeg);
+	background-size：100%；
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 1000px;
+	margin: auto;
+	border: 5px solid black;
+	box-shadow: 0px 5px 10px 5px black;
+	background-color:white;
+}
+a:link{
+	color: navy;
+}
+a:visited{
+	color: red;
+}
+a:hover {
+	color: green;
+}
+a:active {
+	color: blue;
+}	
+header{
+	background-image: url(../images/paper_background.jpg);
+}
+
+header img{
+	float:left;
+	padding: 5px;
+	margin-right:10px;
+	margin-top: 15px;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h1.main{
+	margin: 0px 15px 10px;
+	padding: 7px;
+	font-family: cursive;
+	text-align: center;
+}
+header span{
+	font-size: 150%;
+}
+header h2{
+	margin: 15px;
+	font-family: fantasy;
+	text-align: center;
+}
+header a{
+	text-decoration: none;
+}
+header a:link{
+	color: white;
+}
+header ul.dropbtn{
+	background-color: #666666;
+	color: white;
+	padding: 1em 1.5em 1.7em 1.5em;
+	list-style: none;
+}
+header li.box{
+	float: left;
+	width: 185px;
+}
+header li.dropbox{
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+header ul.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #666666;
+	list-style: none;
+	padding: 15px 7px;
+}
+header li.dropbox:hover ul.dropdown-content{
+	display: block;
+}
+header ul.dropdown-content a:hover {
+	color: black;
+	background-color: white;
+}
+section{
+	float: left;
+	width: 41%;
+	padding:5px;
+}
+aside{
+	width: 30%;
+	margin: 3px;
+	float: right;
+}
+aside img:hover{
+	transform: scale(1.5);
+}
+article{
+	margin: 0px, 3px;
+	font-style: bold;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+}
+
+
+footer{
+	border-top: 1px solid black;
+	margin-top: 3em;
+	padding: 1.5em 0em;
+	background-color: #F5F5F5;
+	clear: both;
+}
